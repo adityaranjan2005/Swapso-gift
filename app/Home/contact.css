@@ -1,0 +1,192 @@
+.contact-form-container {
+    /* min-width: 90vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #101010; /*#1a151f*/
+    padding: 20px;
+    margin-top: 50px; /* Added margin to move the form towards the top */
+  }
+h1{
+    color: #fff;
+}
+  .contact-info-card {
+    width: 30%; /* Increased width for more space */
+    background-color: #000;
+    padding: 60px 30px;
+    border-radius: 10px;
+    line-height: 1.5;
+    color: aqua;
+  }
+  .contact-info-text {
+    margin-bottom: 20%;
+  }
+  .contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Vertical spacing between items */
+  }
+  
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Horizontal spacing between icon and text */
+  }
+  
+  .contact-info-item p {
+    margin: 0; /* Remove margin from paragraph */
+  }
+  
+  
+  .contact-info-card p {
+    margin: 8px 0; /* Adjust the vertical margin as needed */
+  }
+
+  
+  .contact-info-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info-card p {
+    margin: 8px 0;
+  }
+  
+  .contact-form {
+    width: 55%;
+  }
+  
+  .contact-form h2,
+  .contact-form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; 
+  }
+  .contact-form-text-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 10%;
+  }
+  
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .black {
+    background-color: rgb(43, 163, 186);
+  }
+  .white {
+    background-color: aliceblue;
+  }
+
+  .form-row {
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 5%;
+  }
+  
+  .form-column {
+    width: 90%; /* Adjusted width for the form columns */
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    width: 100%; /* Added to fill the width of the column */
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder,
+  .contact-form select option {
+    color: #777;
+  }
+  
+  .send-button {
+    background-color: burlywood;
+    width: 50%;
+    border-radius: 17px;
+    padding: 12px 20px; /* Adjust the padding as needed */
+
+  }
+  
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .contact-form-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .contact-info-card,
+    .contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .form-row {
+      margin-right: 6.5rem;
+      flex-direction: column; /* Stacked layout for smaller screens */
+      align-items: flex-start;
+    }
+  
+    .form-column {
+      width: 100%;
+    }
+  }
+  /* Add a container around each input */
+.input-container {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  /* Style the input fields */
+  .input-container input,
+  .input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Placeholder text color */  
+  .input-container input::placeholder,
+  .input-container textarea::placeholder {
+    color: #aaa; 
+  }
+  #contact-status{
+    color: green;
+    font-size: large;
+  }
+.name-email{
+    min-width: 40vw;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}

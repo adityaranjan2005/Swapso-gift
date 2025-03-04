@@ -1,0 +1,113 @@
+.body1 {
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.slider {
+    align-items: center;
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(340px*6);
+    animation: scroll 20s linear infinite;
+}
+
+/* .slide-track:hover {
+    animation-play-state: paused;
+} */
+
+@keyframes scroll {
+
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-340px*3));
+    }
+}
+.slide-track-2 {
+    display: flex;
+    width: calc(330px*10);
+    animation: scroll2 20s linear infinite;
+}
+
+.slide {
+    margin: 20px;
+    height: auto;
+    width: 300px;
+    background-color: #000;
+    /* border: 2px solid #fff; */
+    color: #000;
+    border-radius: 50px;
+    /* box-shadow: 0 10px 50px rgb(1,151, 1); */
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slider-2 {
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide1{
+    margin: 20px;
+    height: auto;
+    width: 330px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    /* box-shadow: 0 10px 50px rgb(1,151, 1); */
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide1 h1 {
+    position: absolute;
+    right: 15%;
+    transform: translateY(-80%);
+    color: #ffffff;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+.logo2{
+    width:auto !important;
+    height: auto !important;
+    transition: transform 1s;
+}
+.logo3{
+    border-radius: 60px;
+    width:25% !important;
+    height: auto !important;
+    transition: transform 1s;
+}
+
+.logo2:hover{
+    transform: translateZ(5px);
+}
+@keyframes scroll2 {
+
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-330px*5));
+    }
+}

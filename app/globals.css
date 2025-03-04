@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Tailwind CSS */
+/* @layer utilities {
+  .gradient-bg {
+    height: 100vh;
+    background: linear-gradient(to bottom, #000 50vh, black 50vh, black);
+  }
+} */
+
+@layer utilities {
+  .font-comfortaa {
+    font-family: 'Comfortaa';
+  }
+}
+
+
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-initial-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      #000, #000
+  )
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Optional: Customize scrollbar track and handle appearance */
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body {
+  cursor: none; /* This hides the default cursor */
+}
+
+.fixed {
+  transition: all 0.1s ease;
+  transition-property: left, top;
+}
+
+/* In your globals.css */
+* {
+  cursor: none !important;
+}
+
+/* This ensures even interactive elements don't show the default cursor */
+button, 
+a, 
+input,
+select,
+textarea {
+  cursor: none !important;
+}
+
+/* Remove any hover states that might add cursors */
+button:hover, 
+a:hover {
+  cursor: none !important;
+}
